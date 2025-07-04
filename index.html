@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <!--
       New Perspectives on HTML5 and CSS3, 7th Edition
@@ -11,17 +11,14 @@
       Date:   7/4/2025
 
       Filename:   dlr_mornings.html
-
    -->
-   
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>DLR Morning Schedule</title>
    <link href="dlr_reset2.css" rel="stylesheet" />
-   <link href="dlr_styles2.css" rel="stylesheet" />   
+   <link href="dlr_styles2.css" rel="stylesheet" />
    <link href="dlr_tables2.css" rel="stylesheet" />
    <link href="dlr_columns2.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -41,107 +38,162 @@
          </ul>
       </nav>
    </header>
-   
+
    <div id="container">
-   
-      <section id="main"> 
+      <section id="main">
          <img src="dlr_logo2.png" alt="DLR" />
          <h2>DLR Morning Schedule</h2>
          <p>DLR airs listener-supported public radio in Bismarck, North Dakota from 
             5:00 a.m. to 10:30 p.m. <br />You can <a href="#">Listen Live</a> to streaming audio 
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
-			
-	<table class="programs">
-	  <caption>All Times Central</caption>
 
-	  <colgroup>
-		<col class="timeColumn">
-		<col class="wDayColumns" span="5">
-		<col class="wEndColumns" span="2">
-	  </colgroup>
+         <!-- DLR Morning Programs Table -->
+         <table class="programs">
+            <caption>All Times Central</caption>
 
-	  <thead>
-		<tr>
-		  <th scope="col">Time</th>
-		  <th scope="col">Monday</th>
-		  <th scope="col">Tuesday</th>
-		  <th scope="col">Wednesday</th>
-		  <th scope="col">Thursday</th>
-		  <th scope="col">Friday</th>
-		  <th scope="col">Saturday</th>
-		  <th scope="col">Sunday</th>
-		</tr>
-	  </thead>
+            <colgroup>
+               <col class="timeColumn">
+               <col class="wDayColumns" span="5">
+               <col class="wEndColumns" span="2">
+            </colgroup>
 
-	  <tfoot>
-		<tr><td colspan="8">Support your Public Radio Station</td></tr>
-	  </tfoot>
+            <thead>
+               <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Monday</th>
+                  <th scope="col">Tuesday</th>
+                  <th scope="col">Wednesday</th>
+                  <th scope="col">Thursday</th>
+                  <th scope="col">Friday</th>
+                  <th scope="col">Saturday</th>
+                  <th scope="col">Sunday</th>
+               </tr>
+            </thead>
 
-	  <tbody>
-		
-		<tr>
-		  <th scope="row">5:00 a.m.</th>
-		  <td rowspan="8" colspan="5">Morning Edition</td>       
-		  <td rowspan="2">Weekend Wake-Up</td>                  
-		  <td rowspan="4">Sunday Sunrise</td>                    
-		</tr>
-		<tr><th scope="row">5:30 a.m.</th></tr>
+            <tfoot>
+               <tr>
+                  <td colspan="8">Support your Public Radio Station</td>
+               </tr>
+            </tfoot>
 
-		
-		<tr>
-		  <th scope="row">6:00 a.m.</th>
-		  <td rowspan="4">Saturday Coffeehouse</td>             
-		</tr>
-		<tr><th scope="row">6:30 a.m.</th></tr>
+            <tbody>
+               <!-- 6:00 a.m. -->
+               <tr>
+                  <th scope="row">6:00 a.m.</th>
+                  <td rowspan="3">Dawn Air</td>
+                  <td rowspan="3">Dawn Air</td>
+                  <td rowspan="3">Dawn Air</td>
+                  <td rowspan="3">Dawn Air</td>
+                  <td rowspan="3">Dawn Air</td>
+                  <td rowspan="3">Dawn Air Weekends</td>
+                  <td rowspan="2">Sunday Magazine</td>
+               </tr>
 
-		
-		<tr>
-		  <th scope="row">7:00 a.m.</th>
-		  <td rowspan="4">Weekend Marketplace</td>               
-		</tr>
-		<tr><th scope="row">7:30 a.m.</th></tr>
+               <!-- 6:30 a.m. -->
+               <tr>
+                  <th scope="row">6:30 a.m.</th>
+               </tr>
 
-		
-		<tr>
-		  <th scope="row">8:00 a.m.</th>
-		  <td rowspan="4">Saturday Week in Review</td>           
-		</tr>
-		<tr><th scope="row">8:30 a.m.</th></tr>
+               <!-- 7:00 a.m. -->
+               <tr>
+                  <th scope="row">7:00 a.m.</th>
+                  <td rowspan="2">Weekend Reflections</td>
+               </tr>
 
-		
-		<tr>
-		  <th scope="row">9:00 a.m.</th>
-		  <td rowspan="6">Fresh Air</td>                         
-		  <td rowspan="4">Saturday Sports Talk</td>              
-		  <td rowspan="2">Weekend Marketplace (cont.)</td>       
-		</tr>
-		<tr><th scope="row">9:30 a.m.</th></tr>
+               <!-- 7:30 a.m. -->
+               <tr>
+                  <th scope="row">7:30 a.m.</th>
+                  <td>Local News</td>
+                  <td>Local News</td>
+                  <td>Local News</td>
+                  <td>Local News</td>
+                  <td>Local News</td>
+                  <td>Weekend Wrap</td>
+                  <td rowspan="2">Radio U</td>
+               </tr>
 
-		
-		<tr>
-		  <th scope="row">10:00 a.m.</th>
-		  <td rowspan="2">Sunday Book Club</td>                  
-		</tr>
-		<tr><th scope="row">10:30 a.m.</th></tr>
+               <!-- 8:00 a.m. -->
+               <tr>
+                  <th scope="row">8:00 a.m.</th>
+                  <td>World News Feed</td>
+                  <td>World News Feed</td>
+                  <td>World News Feed</td>
+                  <td>World News Feed</td>
+                  <td>World News Feed</td>
+                  <td rowspan="2">What Can You Say?</td>
+               </tr>
 
-		
-		<tr>
-		  <th scope="row">11:00 a.m.</th>
-		  <td rowspan="3">Saturday Tech Hour</td>                
-		  <td rowspan="3">Sunday Jazz Brunch</td>                
-		</tr>
-		<tr><th scope="row">11:30 a.m.</th></tr>
-	  </tbody>
-	</table>
-	  
+               <!-- 8:30 a.m. -->
+               <tr>
+                  <th scope="row">8:30 a.m.</th>
+                  <td>Classical Roots</td>
+                  <td>Classical Roots</td>
+                  <td>Classical Roots</td>
+                  <td>Classical Roots</td>
+                  <td>Classical Roots</td>
+                  <td rowspan="2">University on the Air</td>
+               </tr>
+
+               <!-- 9:00 a.m. -->
+               <tr>
+                  <th scope="row">9:00 a.m.</th>
+                  <td rowspan="2">Symphony City</td>
+                  <td rowspan="2">Symphony City</td>
+                  <td rowspan="2">Symphony City</td>
+                  <td rowspan="2">Symphony City</td>
+                  <td rowspan="2">Symphony City</td>
+                  <td rowspan="2">Animal Talk</td>
+                  <td rowspan="2">Word Play</td>
+               </tr>
+
+               <!-- 9:30 a.m. -->
+               <tr>
+                  <th scope="row">9:30 a.m.</th>
+               </tr>
+
+               <!-- 10:00 a.m. -->
+               <tr>
+                  <th scope="row">10:00 a.m.</th>
+                  <td rowspan="2">Opera Live from the East Coast</td>
+                  <td rowspan="2">Opera Live from the East Coast</td>
+                  <td rowspan="3">Brain Stew</td>
+               </tr>
+
+               <!-- 10:30 a.m. -->
+               <tr>
+                  <th scope="row">10:30 a.m.</th>
+               </tr>
+
+               <!-- 11:00 a.m. -->
+               <tr>
+                  <th scope="row">11:00 a.m.</th>
+                  <td rowspan="2">The Inner Mind</td>
+               </tr>
+
+               <!-- 11:30 a.m. -->
+               <tr>
+                  <th scope="row">11:30 a.m.</th>
+                  <td rowspan="2">Book Club</td>
+                  <td rowspan="2">Book Club</td>
+                  <td rowspan="2">Book Club</td>
+                  <td rowspan="2">Book Club</td>
+                  <td rowspan="2">Book Club</td>
+                  <td rowspan="2">Grammar Rules!!</td>
+                  <td rowspan="2">Weekend Wrap</td>
+               </tr>
+
+               <!-- 12:00 p.m. -->
+               <tr>
+                  <th scope="row">12:00 p.m.</th>
+               </tr>
+            </tbody>
+         </table>
       </section>
-      
    </div>
-   
+
    <footer>
       DLR &#183; 4300 Magnolia Lane &#183; Bismarck, ND 58504 &#183; (701) 555 - 5611
    </footer>
 </body>
-
 </html>
